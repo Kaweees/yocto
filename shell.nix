@@ -1,4 +1,3 @@
-
 {
   pkgs ? import <nixpkgs> { },
 }:
@@ -12,5 +11,8 @@ let
 in
 (import yoctoEnv) {
   inherit pkgs;
-  extraPkgs = [ pkgs.hello ];
+  extraPkgs = with pkgs; [
+    nixfmt # Nix formatter
+    just # Just
+  ];
 }
