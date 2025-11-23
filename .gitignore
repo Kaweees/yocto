@@ -1,10 +1,11 @@
 *
 
 !.github/
-!.github/**/
+!.github/**
 !assets/
-!assets/**/
+!assets/**
 !.editorconfig
+!.envrc
 !.gitattributes
 !.gitignore
 !.gitkeep
